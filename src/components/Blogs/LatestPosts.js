@@ -1,17 +1,17 @@
 import React from 'react';
-import { Section, Container, Columns, Column, Title } from 'bloomer';
+import { Column, Title } from 'bloomer';
 import styles from './Blogs.module.css';
 import SingleBlog from './SingleBlog';
 
-const LatestPosts = (props) => {
+const LatestPosts = ({posts}) => {
+  const postList = posts.map( post => (
+    <SingleBlog key={post.id} article={post} />
+  ))
+
   return (
     <Column className={"is-three-fifths " + styles.latest_blogs}>
       <Title tag='h2'>Latest Articles</Title>
-      <SingleBlog />
-      <SingleBlog />
-      <SingleBlog />
-      <SingleBlog />
-      <SingleBlog />
+      { postList }
     </Column>
   )
 };

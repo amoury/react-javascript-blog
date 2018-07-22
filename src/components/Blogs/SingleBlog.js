@@ -2,24 +2,21 @@ import React from 'react';
 import {} from 'bloomer';
 import styles from './Blogs.module.css';
 
-const SingleBlog = (props) => {
+const SingleBlog = ({article}) => {
   return <article>
-      <h3 className={styles.article_heading}>Hello World</h3>
+      <h3 className={styles.article_heading}>{article.title}</h3>
       <div className={styles.excerpt}>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-          repudiandae blanditiis hic, iure eos veritatis quam sint voluptate
-          nisi explicabo. Libero error nulla quae ex esse, quos beatae facilis
-          hic?
+          {article.excerpt}
         </p>
       </div>
       <div className={styles.meta_data}>
         <p>
           Article by
-          <span className={styles.author_name}> Olga Khan </span>
+          <span className={styles.author_name}> {article.author} </span>
           / curated from
-          <span class={styles.source_name}>
-            <a href="#"> Medium</a>
+          <span className={styles.source_name}>
+            <a href={article.sourceUrl}> {article.source}</a>
           </span>
         </p>
       </div>

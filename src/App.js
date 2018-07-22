@@ -3,6 +3,7 @@ import './App.css';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import BlogIndex from './containers/BlogIndex';
+import BookIndex from './containers/BookIndex';
 
 //components
 
@@ -16,7 +17,7 @@ class App extends Component {
       <div className="App">
         <Header />
           <main style={{minHeight: '90vh'}}>
-            <BlogIndex/>
+            <BookIndex />
           </main>
         <Footer />
       </div>

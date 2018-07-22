@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Column, Columns } from 'bloomer';
+import moment from 'moment';
 import styles from './Navigation.module.css';
 import logo from '../assets/images/logo.svg';
 
@@ -10,7 +11,7 @@ const Navigation = (props) => {
           <div className={styles.logo_box}>
             <img src={logo} alt="Main Logo" />
           </div>
-          <span className={styles.current_date}>19 July 2018 / 22:42 /</span>
+          <span className={styles.current_date}>{moment().format('DD MMMM YYYY / hh:mm')}</span>
         </Column>
         <Column className={"auto " + styles.search_column}>
           <form type="search">
