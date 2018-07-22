@@ -1,0 +1,58 @@
+
+.latest_blogs {
+  padding-right: 20px;
+}
+
+.popular_blogs_column h2 {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.popular_blogs {
+  background: #ede6e0;
+  padding: 20px 40px;
+  margin-left: 20px;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+/* 
+  Single Article
+*/
+
+article {
+  margin: 40px 0;
+}
+
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8em; 
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.6em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.meta_data p {
+  padding: 10px 0;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+}
+.author_name,
+.source_name {
+  font-weight: 700;
+}
+
+.source_name a {
+  color: inherit
+}
