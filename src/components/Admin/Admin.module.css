@@ -1,0 +1,39 @@
+/* 
+Navigation
+*/
+
+.admin__vertical_navbar {
+  max-width: 20vw;
+  position: fixed;
+  height: 100vh;
+  width: 25vw;
+  background: #ede6e0;
+}
+
+.admin__menu_links {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+.admin__menu_link {
+  padding: 20px 0;
+  padding-left: 5vw;
+  font-size: 1.2em;
+}
+
+.admin__menu_link a {
+  color: #000;
+}
+
+
+/* 
+Posts Table
+*/
+
+.new_post_button {
+  margin: 20px 30px;
+}
