@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Column, Columns } from 'bloomer';
+import { NavLink } from 'react-router-dom';
 import moment from 'moment';
 import styles from './Navigation.module.css';
 import logo from '../assets/images/logo.svg';
@@ -11,7 +12,9 @@ const Navigation = (props) => {
           <div className={styles.logo_box}>
             <img src={logo} alt="Main Logo" />
           </div>
-          <span className={styles.current_date}>{moment().format('DD MMMM YYYY / hh:mm')}</span>
+          <span className={styles.current_date}>
+            {moment().format("DD MMMM YYYY / hh:mm")}
+          </span>
         </Column>
         <Column className={"auto " + styles.search_column}>
           <form type="search">
@@ -28,16 +31,16 @@ const Navigation = (props) => {
           <div className={styles.menu_links_wrapper}>
             <ul className={styles.menu_links}>
               <li>
-                <a href="#">Home</a>
+                <NavLink to="/"> Home </NavLink>
               </li>
               <li>
-                <a href="#">Books</a>
+                <NavLink to="/books">Books</NavLink>
               </li>
               <li>
-                <a href="#">Tutorials</a>
+                <a href="/tutorials">Tutorials</a>
               </li>
               <li>
-                <a href="#">Other Resources</a>
+                <a href="/resources">Other Resources</a>
               </li>
             </ul>
           </div>

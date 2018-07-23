@@ -1,15 +1,12 @@
 import React from 'react';
-import { Columns } from 'bloomer';
-import AdminNav from './AdminNav';
-import PostsDashboard from '../../containers/Admin/PostsDashboard';
+import AdminLayout from './AdminLayout';
 
 
 const AdminDashboard = (props) => {
   return (
-    <Columns>
-      <AdminNav />
-      <PostsDashboard/>
-    </Columns>
+    <AdminLayout>
+      <h1>Welcome to the Admin Dashboard</h1>
+    </AdminLayout>
   )
 };
 

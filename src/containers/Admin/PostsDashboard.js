@@ -1,16 +1,16 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PostsTable from '../../components/Admin/PostsTable';
-import EditPost from '../../components/Admin/EditPost';
+import AdminLayout from '../../components/Admin/AdminLayout';
 
 
 class PostsDashboard extends Component {
   render () {
     return (
-      <Fragment>
-        <EditPost/>
-      </Fragment>
+      <AdminLayout>
+        <PostsTable/>
+      </AdminLayout>
     )
   }
-}
+} 
 
 export default PostsDashboard;

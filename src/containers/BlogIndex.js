@@ -1,9 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import {Section, Columns} from 'bloomer';
 import styles from './BlogIndex.module.css';
 import FeaturedPost from '../components/Blogs/FeaturedPost';
 import LatestPosts from '../components/Blogs/LatestPosts';
 import PopularPosts from '../components/Blogs/PopularPosts';
+import Layout from '../layout/Layout';
 
 const featuredPost = {
   title: "Hello World",
@@ -79,7 +80,7 @@ class BlogIndex extends Component {
   };
 
   render () {
-    return <Fragment>
+    return <Layout>
         <FeaturedPost post={this.state.featuredPost} />
         <Section className={"container " + styles.full_blog_list}>
           <Columns className={styles.columns}>
@@ -87,7 +88,7 @@ class BlogIndex extends Component {
             <PopularPosts posts={this.state.popularPosts} />
           </Columns>
         </Section>
-      </Fragment>;
+      </Layout>;
   }
 }
 
